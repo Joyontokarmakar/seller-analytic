@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Seller Analytic
+    </title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="image" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/all-plugin.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/themify-icon/themify-icons.css">
+    <!-- css-->
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://kit.fontawesome.com/48359289d4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/arif.css">
+
+    <!-- Bootstrap Select-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boostrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+			</script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+			</script>
+		<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+
+    <!--Seller Analytic Page Start-->
+
+    <section class="gig-details">
+        <div class="container">
+            <div class="row">
+                <div class="user-gigs mt30">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                Analytics
+                            </h2>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="earning-status">
+                                <div class="col-sngl">
+                                    <span>
+                                        Total Earnings
+                                        <br>
+                                        <b>
+                                            $0
+                                        </b>
+                                    </span>
+                                </div>
+
+                                <div class="col-sngl">
+                                    <span>
+                                        Total Completed Orders
+                                        <br>
+                                        <b>
+                                            0
+                                        </b>
+                                    </span>
+                                </div>
+
+                                <div class="col-sngl">
+                                    <span>
+                                        Avg. Selling Price
+                                        <br>
+                                        <b>
+                                            $0
+                                        </b>
+                                    </span>
+                                </div>
+
+                                <div class="col-sngl">
+                                    <span>
+                                        Earned In March
+                                        <br>
+                                        <b>
+                                            $0
+                                        </b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dv_partition">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Overview</h4>
+                                <br>
+
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-10 col-sm-8 col-xs-8">
+                                            <nav>
+                                                <ul class="list-inline slr_grph_list">
+                                                    <li><input type="radio">Earned <span>($0)</span></li> &nbsp; &nbsp;
+                                                    <li><input type="radio">Cancelled <span>($0)</span></li> &nbsp; &nbsp;
+                                                    <li><input type="radio">Completed <span>(0)</span></li> &nbsp; &nbsp;
+                                                    <li><input type="radio">New orders <span>(0)</span></li> &nbsp; &nbsp;
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="col-md-2  col-sm-4 col-xs-4 pull-right slr_grph_option">
+                                            <select>
+                                                <option value="last_30_days">Last 30 Days</option>
+                                                <option value="last_3_months">Last 3 Months</option>
+                                                <option value="yearly">Yearly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                                    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dv_partition">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Your seller level</h4> <span><a href="#">learn more</a></span>
+                                <p>Evaluation period ends on Apr 15, 2020, 00:00 GMT</p>
+
+                                <div class="level-bar">
+                                    <div class="progress-container">
+                                        <div class="progress-fill">
+
+                                        </div>
+                                    </div>
+                                    <span class="level-badge current-level no-level">
+
+                                    </span>
+                                    <span class="level-badge level-1">
+
+                                    </span>
+                                    <span class="level-badge level-2">
+
+                                    </span>
+                                    <span class="level-badge top-level">
+
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dv_partition">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Achieve these goals to become a Level One Seller</h4>
+                                <br>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Response Rate</h4>
+                                                                    <h5>Respond to 90% of the inquiries you received in the last 60 days</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>100%</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="100" max="100"> 100% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Order Completion Rate</h4>
+                                                                    <h5>Complete 90% of your orders, over the course of 60 days</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>100%</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="100" max="100"> 100% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>On-time Delivery</h4>
+                                                                    <h5>Deliver 90% of your orders on time, over the course of 60 days</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>100%</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="100" max="100"> 100% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Rating</h4>
+                                                                    <h5>Maintain a 4.7 star rating, over the course of 60 days</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>5%</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="5" max="100"> 5% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Selling Seniority</h4>
+                                                                    <h5>Complete at least 60 day as a seller</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>60 Day</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="60" max="60"> 60% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Orders</h4>
+                                                                    <h5>Receive and complete at least 10 orders (all time)</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>10</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="10" max="100"> 10% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Earnings</h4>
+                                                                    <h5>Earn at least $400 from completed orders (all time)</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>400$</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="400" max="400"> 400% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr class="achv_row">
+                                                        <td id="slr_data">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            <div class="tbl_point">
+                                                                <span class="achv_goal">
+                                                                    <h4>Days Without Warnings</h4>
+                                                                    <h5>Avoid receiving warnings for TOS violations over the course of 30 day</h5>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="progress-show">
+                                                                <span><b>30 Day</b></span>
+                                                                <br>
+                                                                <div class="progress-bar">
+                                                                    <progress id="file" value="30" max="30"> 30% </progress>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dv_partition">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Ratings</h4>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                                <h6><b>All-Time Rating 0</b></h6>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 col-xs-5"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <h6>(0)</h6>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="inner_ratings">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <h6>5 Star</h6>
+                                                </div>
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <div class="progress-bar">
+                                                        <progress id="file" value="0" max="100"> 0% </progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <h6>(0)</h6>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <h6>4 Star</h6>
+                                                </div>
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <div class="progress-bar">
+                                                        <progress id="file" value="0" max="100"> 0% </progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <h6>(0)</h6>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <h6>3 Star</h6>
+                                                </div>
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <div class="progress-bar">
+                                                        <progress id="file" value="0" max="100"> 0% </progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <h6>(0)</h6>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <h6>2 Star</h6>
+                                                </div>
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <div class="progress-bar">
+                                                        <progress id="file" value="0" max="100"> 0% </progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <h6>(0)</h6>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <h6>1 Star</h6>
+                                                </div>
+                                                <div class="col-md-5 col-sm-5 col-xs-5">
+                                                    <div class="progress-bar">
+                                                        <progress id="file" value="0" max="100"> 0% </progress>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <h6>(0)</h6>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6><b>Rating Breakdown</b></h6>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                                <h6>Communication With Seller</h6>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 col-xs-5"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <h6>(0)</h6>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                                <h6>Service as Described</h6>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 col-xs-5"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <h6>(0)</h6>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                                <h6>Buy Again or Recommend</h6>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 col-xs-5"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <h6>(0)</h6>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <h6><b>Rated Orders 0%</b></h6>
+                                                <br>
+
+                                                <div class="progress-bar">
+                                                    <progress id="file" value="0" max="100"> 0% </progress>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dv_partition">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>World Domination <span>0%</span></h4>
+                                <br>
+
+                                <div class="col-md-12">
+                                    <!--
+                                    <div id="world-map" style="height: 300px;"></div>
+                                    
+                                    <script>
+                                    $('#world-map').vectorMap();
+                                    </script>
+-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seller Analytic Page End-->
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-2.2.4.js">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js">
+    </script>
+    <!-- waypoints js-->
+    <script src="vendors/waypoints/waypoints.min.js">
+    </script>
+    <script src="vendors/counterup/jquery.counterup.min.js">
+    </script>
+    <script src="vendors/magnific-popup/jquery.magnific-popup.min.js">
+    </script>
+    <script src="vendors/swipper/swiper.min.js">
+    </script>
+    <script src="vendors/parallax/twinlight.js">
+    </script>
+    <script src="vendors/parallax/jquery.wavify.js">
+    </script>
+    <script src="js/nav.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js">
+    </script>
+    <!--owl carousel js-->
+    <script type="text/javascript" src="vendors/owl-carousel/owl.carousel.min.js">
+    </script>
+    <!--custom js -->
+    <script type="text/javascript" src="js/custom.js">
+    </script>
+    <script>
+        // $(".notific-nicescrol").niceScroll({
+        //     cursorcolor:"orange",
+        //     cursorwidth:"6px"
+        // });
+        // $("#inbox").niceScroll({
+        //     cursorcolor:"orange",
+        //     cursorwidth:"6px"
+        // });
+
+    </script>
+    <script>
+        window.onload = function() {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                exportEnabled: true,
+                exportFileName: "Tesla-StockChart",
+                axisX: {
+                    interval: 1,
+                    intervalType: "month",
+                    valueFormatString: "MMM"
+                },
+                axisY: {
+                    includeZero: false,
+                    prefix: "$",
+                    title: "REVENUE"
+                },
+                data: [{
+                    type: "ohlc",
+                    yValueFormatString: "$###0.00",
+                    xValueFormatString: "MMM YYYY",
+                    dataPoints: [{
+                            x: new Date(2016, 00, 01),
+                            y: [230.720001, 231.380005, 182.410004, 191.199997]
+                        },
+                        {
+                            x: new Date(2016, 01, 01),
+                            y: [188.759995, 199.520004, 141.050003, 191.929993]
+                        },
+                        {
+                            x: new Date(2016, 02, 01),
+                            y: [194.250000, 239.880005, 181.500000, 229.770004]
+                        },
+                        {
+                            x: new Date(2016, 03, 01),
+                            y: [244.830002, 269.339996, 233.250000, 240.759995]
+                        },
+                        {
+                            x: new Date(2016, 04, 01),
+                            y: [241.500000, 243.190002, 203.660004, 223.229996]
+                        },
+                        {
+                            x: new Date(2016, 05, 01),
+                            y: [221.479996, 240.850006, 187.869995, 212.279999]
+                        },
+                        {
+                            x: new Date(2016, 06, 01),
+                            y: [206.139999, 235.279999, 206.000000, 234.789993]
+                        },
+                        {
+                            x: new Date(2016, 07, 01),
+                            y: [235.500000, 236.630005, 208.649994, 212.009995]
+                        },
+                        {
+                            x: new Date(2016, 08, 01),
+                            y: [209.009995, 211.100006, 193.449997, 204.029999]
+                        },
+                        {
+                            x: new Date(2016, 09, 01),
+                            y: [212.300003, 215.669998, 192.000000, 197.729996]
+                        },
+                        {
+                            x: new Date(2016, 10, 01),
+                            y: [198.039993, 199.350006, 178.190002, 189.399994]
+                        },
+                        {
+                            x: new Date(2016, 11, 01),
+                            y: [188.250000, 223.800003, 180.000000, 213.690002]
+                        }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+
+    </script>
+    <style>
+        .carousel-inner {
+            overflow: hidden !important;
+        }
+
+        .carousel-caption {
+            text-align: right !important;
+
+        }
+
+        .carousel-caption h3 {
+            color: #fff;
+        }
+
+        .carousel-caption h3 small {
+            font-size: 12px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .carousel-caption p {
+            font-size: 13px;
+            margin-top: 10px;
+            line-height: 17px;
+            color: #fff;
+        }
+
+    </style>
+</body>
+
+</html>
